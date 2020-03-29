@@ -22,10 +22,16 @@ namespace WebAppCodeFirst.Models
                 entity.Property(e => e.Id)
                 .HasColumnName("id");
 
+                entity.Property(e => e.Code)
+                .HasColumnName("code")
+                .IsRequired(true)
+                .HasMaxLength(50)
+                .IsUnicode(false);
+
                 entity.Property(e => e.Name)
                 .HasColumnName("name")
                 .IsRequired()
-                .HasMaxLength(50)
+                .HasMaxLength(120)
                 .IsUnicode(true);
 
                 entity.Property(e => e.Description)
