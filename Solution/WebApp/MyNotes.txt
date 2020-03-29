@@ -1,0 +1,10 @@
+
+## Installed dependencies by VS NPM
+Microsoft.EntityFrameworkCore.SqlServer
+Microsoft.EntityFrameworkCore.Tools
+
+
+## To use EF Core - Database first:
+https://www.entityframeworktutorial.net/efcore/create-model-for-existing-database-in-ef-core.aspx
+Scaffold-DbContext "Server=(localdb)\MSSQLLocalDB;Database=db-2020-03-28;Trusted_Connection=True" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Context AppDbContext
+
