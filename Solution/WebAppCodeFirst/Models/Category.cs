@@ -18,8 +18,7 @@ namespace WebAppCodeFirst.Models
         [StringLength(maximumLength:520)]
         public string Description { get; set; }
         
-        [Required]
-        public bool? Status { get; set; }
+        public bool Status { get; set; }
 
         virtual public ICollection<Product> Products { get; set; }
     }

@@ -21,7 +21,6 @@ namespace WebAppCodeFirst.Models
         [Required]
         public int Stock { get; set; }
 
-        [Required]
         public bool Status { get; set; }
 
         virtual public Category Category { get; set; }
